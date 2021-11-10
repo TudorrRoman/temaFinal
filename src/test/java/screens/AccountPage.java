@@ -39,10 +39,10 @@ public class AccountPage {
         return this;
     }
 
-    public AccountPage selectFromDropdown(String selectDropdown) {
-        wait.waitForElementsToBeVisible(selectFromDropdownField);
+    public AccountPage selectFromDropdown() {
+//        wait.waitForElementsToBeVisible(selectFromDropdownField);
         selectFromDropdownField.forEach(webElement -> {
-            if(webElement.getText().equalsIgnoreCase(selectDropdown)) {
+            if(webElement.getText().equalsIgnoreCase("OPENCART DOCUMENTATION")) {
                 webElement.click();
             }
         });
