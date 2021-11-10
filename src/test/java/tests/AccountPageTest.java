@@ -33,7 +33,7 @@ public class AccountPageTest extends BaseTest {
                 .enterPinNum("1589")
                 .clickContinueButton();
         accPage.clickResources()
-                .selectFromDropdown("OpenCart Documentation");
+                .selectFromDropdown();
 //                .checkPageTitle("");
     }
 }
