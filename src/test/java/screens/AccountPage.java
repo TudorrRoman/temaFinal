@@ -33,7 +33,7 @@ public class AccountPage {
         clickLogOutButton.click();
         return this;
     }
-
+//new
     public AccountPage clickResources() {
         clickResourcesField.click();
         return this;
