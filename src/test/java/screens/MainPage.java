@@ -30,13 +30,18 @@ public class MainPage {
 
     public MainPage selectContactPage(String contact) {
         clickContactPage.forEach(webElement -> {
-            if(webElement.getText().equals(contact)) {
+            if(webElement.getText().equalsIgnoreCase(contact)) {
                 String elementName = webElement.getText().toUpperCase();
                 System.out.println(elementName);
                 webElement.click();
             }
         });
         return this;
+    }
+
+    public MainPage navigateBack() {
+        driver.navigate().back();
+        return new MainPage();
     }
 
 }
