@@ -45,7 +45,7 @@ public class AccountPage {
             if(webElement.getText().equals(selectDropdown)) {
             String elementName = webElement.getText().toUpperCase();
                 System.out.println(elementName);
-                //                webElement.click();
+                webElement.click();
             }
         });
         return this;

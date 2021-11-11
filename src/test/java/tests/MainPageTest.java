@@ -15,6 +15,7 @@ public class MainPageTest extends BaseTest {
     @Test
     public void clickOnContactPage() {
         MainPage mainPage = new MainPage();
-        mainPage.selectContactPage("Contact Us");
+        mainPage.selectContactPage("Contact Us")
+                .navigateBack();
     }
 }
