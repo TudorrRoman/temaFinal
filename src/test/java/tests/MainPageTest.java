@@ -11,4 +11,10 @@ public class MainPageTest extends BaseTest {
         MainPage mainPage = new MainPage();
         mainPage.clickLogButton();
     }
+
+    @Test
+    public void clickOnContactPage() {
+        MainPage mainPage = new MainPage();
+        mainPage.selectContactPage("Contact Us");
+    }
 }

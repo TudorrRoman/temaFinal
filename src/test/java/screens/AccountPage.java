@@ -39,11 +39,13 @@ public class AccountPage {
         return this;
     }
 
-    public AccountPage selectFromDropdown() {
+    public AccountPage selectFromDropdown(String selectDropdown) {
 //        wait.waitForElementsToBeVisible(selectFromDropdownField);
         selectFromDropdownField.forEach(webElement -> {
-            if(webElement.getText().equalsIgnoreCase("OPENCART DOCUMENTATION")) {
-                webElement.click();
+            if(webElement.getText().equals(selectDropdown)) {
+            String elementName = webElement.getText().toUpperCase();
+                System.out.println(elementName);
+                //                webElement.click();
             }
         });
         return this;
